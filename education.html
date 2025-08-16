@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education - Emma Vigy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cce6f3;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00334d;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00334d;
+        width: 200px;
+        padding: 10px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #004466;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    .education-image {
+      display: flex;
+      justify-content: center;
+      margin-top:30px;
+      margin-bottom: 40px;
+    }
+
+    .education-image img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .site-footer {
+      background-color: #00334d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .site-footer .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 1.1em;
+      color: #cce6f3;
+      margin-bottom: 10px;
+    }
+
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .site-footer ul li {
+      margin: 6px 0;
+    }
+
+    .site-footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="education.html">Education</a>
+      <a href="hobbies.html">Hobbies</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Emma Vigy</h1>
+    <p>Software Developer • Creative Thinker • Detail-Oriented</p>
+  </header>
+
+  <main>
+    <div class="education-image">
+      <img src="assets/Screenshot 2025-07-24 at 8.04.13 PM.png" alt="Graduation or academic image" />
+    </div>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>University of Wisconsin–Madison</strong><br />
+      <em>Bachelor of Science in Computer Science</em><br />
+      Graduated: August 2025</p>
+    </section>
+
+    <section>
+      <h2>Relevant Coursework</h2>
+      <ul>
+        <li>Computer Science 200, 300, 400 (Programming I–III)</li>
+        <li>Calculus, Discrete Mathematics</li>
+        <li>Applied Statistics for Engineers</li>
+        <li>Elementary Matrix and Linear Algebra</li>
+        <li>Algorithms, Cryptography, Numerical Methods</li>
+        <li>Combinatorics, Big Data Systems, Optimization</li>
+        <li>Database Management Systems, Machine Organization and Programming</li>
+        <li>Building User Interfaces, Artificial Intelligence</li>
+        <li>Augmented/Virtual Reality, Neural Networks</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Programming Languages</h2>
+      <p>Java, Python, C, JavaScript, HTML, CSS, Swift</p>
+    </section>
+
+    <section>
+      <h2>Technologies & Tools</h2>
+      <p>AWS DynamoDB, AWS Lambda, FastAPI, JUnit, Node.js, React.js, NoSQL, Linux, Git, GitHub</p>
+    </section>
+
+    <section>
+      <h2>Relevant Skills</h2>
+      <p>Object-Oriented Programming (OOP), Procedural Programming, Test Driven Development (TDD), Machine Learning</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>Red Black Tree Implementation</li>
+        <li>Binary Search Tree Implementation</li>
+        <li>Linked Lists and Hash Functions</li>
+        <li>Movie Catalog Simulator</li>
+        <li>B+ Tree and AVL Tree Implementations</li>
+        <li>Image and Digit Classification</li>
+        <li>Virtual Mindful Breathing Space</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Contact:</p>
+      <ul>
+        <li><a href="mailto:emmavigy@gmail.com">emmavigy@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/emmavigy/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/evigy" target="_blank">GitHub</a></li>
+        <li>Aiken, South Carolina</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>

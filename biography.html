@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biography - Emma Vigy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cce6f3;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00334d;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00334d;
+        width: 200px;
+        padding: 10px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .bio-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .bio-image img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-footer {
+      background-color: #00334d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .site-footer .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 1.1em;
+      color: #cce6f3;
+      margin-bottom: 10px;
+    }
+
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .site-footer ul li {
+      margin: 6px 0;
+    }
+
+    .site-footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="education.html">Education</a>
+      <a href="hobbies.html">Hobbies</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Emma Vigy</h1>
+    <p>Software Developer • Creative Thinker • Detail-Oriented</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="bio-image">
+        <img src="assets/IMG_1911.JPG" alt="Emma Vigy" />
+      </div>
+
+      <h2>Biography</h2>
+      <p>
+        I was born in Lagny-sur-Marne, a charming town just outside of Paris, France. My early years were spent surrounded by cobblestone streets, pastries that actually melt in your mouth, and the rhythm of the French language — the only language I knew at the time. When I was four, my family made a bold leap across the Atlantic to Wisconsin, trading croissants for cheese curds in pursuit of my father’s deep-rooted love for the outdoors and his version of the American dream. It was a jarring shift — culturally, linguistically, and climatologically (bonjour snow!) — but it laid the foundation for a life shaped by resilience, curiosity, and a foot in two very different worlds. I learned English as I started school, slowly building my voice in a new language while staying tethered to my French roots at home.
+      </p>
+      <p>
+        I spent most of my upbringing in Wisconsin, but my high school years took a turn when I was accepted to Culver Academies, a boarding school in Indiana. Those years gave me space to explore independence, meet people from all over the world, and start shaping the kind of person I wanted to become. After graduating, I took a gap year — not because I lacked ambition, but because I needed clarity. I wanted to be intentional about my next steps, to figure out what excited me, and to find a place where I could thrive. That reflection eventually led me back to Wisconsin, where I enrolled at the University of Wisconsin–Madison and pursued a Bachelor of Science in Computer Science. It was there that I discovered how much I loved solving problems through code, designing meaningful digital experiences, and pushing the boundaries of what technology can do.
+      </p>
+      <p>
+        Outside of the classroom, another lifelong passion galloped alongside me: polo. I played on UW Madison’s polo team and was fortunate enough to compete at Regionals held at the Virginia Polo Center. That tournament sparked an unexpected chain of events — I met the managers of a Virginia-based club who invited me to spend the summer playing there. From then on, polo became more than just a sport; it became a way of life. The last couple years of college, I found myself moving around to seize new playing opportunities, eventually landing in Aiken, South Carolina — a town known for its equestrian culture and welcoming community. It’s where I live now, continuing to balance my technical ambitions with time spent on horseback, in code, and under the open sky.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Contact:</p>
+      <ul>
+        <li><a href="mailto:emmavigy@gmail.com">emmavigy@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/emmavigy/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/evigy" target="_blank">GitHub</a></li>
+        <li>Aiken, South Carolina</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Emma Vigy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cce6f3;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00334d;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00334d;
+        width: 200px;
+        padding: 10px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .site-footer {
+      background-color: #00334d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .site-footer .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 1.1em;
+      color: #cce6f3;
+      margin-bottom: 10px;
+    }
+
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .site-footer ul li {
+      margin: 6px 0;
+    }
+
+    .site-footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="education.html">Education</a>
+      <a href="hobbies.html">Hobbies</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Emma Vigy</h1>
+    <p>Software Developer • Creative Thinker • Detail-Oriented</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+       Hi! I’m Emma Vigy, and I’m so glad you’re here. This site is my little corner of the internet — a space where I bring together all the different pieces of who I am. I’m a computer science graduate with a passion for technology, an eye for design, and a love for everything from virtual reality to equestrian sports. Whether I’m coding a website, exploring the latest in machine learning, or chasing down a polo ball on horseback, I’m driven by curiosity and a desire to keep learning, creating, and building.
+      </p>
+      <p>
+       This website is both a personal portfolio and a reflection of my journey. You’ll find my biography, where I share how a childhood in France led me to Wisconsin and ultimately to a degree in computer science. There’s also a detailed look at my academic experience at UW–Madison — from data structures and algorithms to virtual reality and AI. Beyond school, you’ll find the hobbies that keep me grounded: horses, fitness, Formula One, digital design, and more. Each section tells a piece of my story and the values I carry with me: passion, creativity, and drive.
+      </p>
+      <p>
+        Whether you’re here to learn more about my work, browse a shared interest, or just explore, I hope something here resonates with you. I’m constantly evolving — as a developer, designer, and human — and I hope this space reflects that. Thanks for stopping by, and I hope you enjoy exploring as much as I’ve enjoyed building it.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Contact:</p>
+      <ul>
+        <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li>Aiken, South Carolina</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobbies - Emma Vigy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cce6f3;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00334d;
+      padding: 10px 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #00334d;
+        width: 200px;
+        padding: 10px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #004466;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    .hobby-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .hobby-image img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .site-footer {
+      background-color: #00334d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .site-footer .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 1.1em;
+      color: #cce6f3;
+      margin-bottom: 10px;
+    }
+
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .site-footer ul li {
+      margin: 6px 0;
+    }
+
+    .site-footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="education.html">Education</a>
+      <a href="hobbies.html">Hobbies</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Emma Vigy</h1>
+    <p>Software Developer • Creative Thinker • Detail-Oriented</p>
+  </header>
+
+  <main>
+    <div class="hobby-image">
+      <img src="assets/Screenshot 2025-08-16 at 4.17.53 PM.png" alt="Emma playing polo" />
+    </div>
+
+    <section>
+      <h2>Polo</h2>
+      <p>
+        Horses have been part of my life for as long as I can remember. I've explored many disciplines — from the precision of dressage, to the adrenaline of show jumping, to the strategy of eventing — but it was during high school at Culver Academies that I discovered polo. The fast pace, the teamwork, the bond with the horse — I instantly fell in love and haven’t looked back since.
+      </p>
+      <p>
+        I’ve been fortunate to compete at the national level in both high school and college, representing Culver Academies and later the University of Wisconsin–Madison, where I played on the intercollegiate polo team. My current handicap is 0, and my women's handicap is 2. Polo has shaped not only how I ride, but how I think — with sharp decision-making, trust in teammates, and passion driving every play. Today, I continue to ride and play, staying connected to the sport and the horses that started it all.
+      </p>
+    </section>
+
+    <div class="hobby-image">
+      <img src="assets/Screenshot 2025-08-16 at 4.28.08 PM.png" alt="Emma running or lifting weights" />
+    </div>
+
+    <section>
+      <h2>Running & Weight Lifting</h2>
+      <p>
+        Outside the saddle and the classroom, running and weight lifting are where I push myself physically and mentally. These practices have become a daily ritual — a way to clear my head, reset my focus, and build resilience. Running challenges my endurance, while weight lifting has taught me strength in both form and discipline. They balance the intensity of my academic and technical pursuits with something grounded, powerful, and personal.
+      </p>
+      <p>
+        Fitness isn’t just something I enjoy — it’s something I prioritize. I find joy in setting goals, tracking progress, and appreciating the limits my body can overcome with dedication. Whether I’m training for a distance run or focusing on strength cycles, this part of my routine helps shape who I am: focused, intentional, and always striving to improve.
+      </p>
+    </section>
+
+    <div class="hobby-image">
+      <img src="assets/AA51AFCE-97F8-4649-9FAC-FBB4A9521F40.JPG" alt="Formula 1 Grand Prix" />
+    </div>
+
+    <section>
+      <h2>Formula One</h2>
+      <p>
+        Formula One isn’t just a sport to me — it’s a passion, a thrill, and a lifelong obsession. I love watching every race, every qualifying session, every dramatic pit strategy and final lap duel. I've been lucky enough to attend multiple races in person, including the Austin Grand Prix and most recently Silverstone, both of which only deepened my appreciation for the speed, precision, and energy of the sport.
+      </p>
+      <p>
+        It’s a dream of mine to attend every single Grand Prix in my lifetime — a true bucket list mission. At the top of that list? Monaco. The history, the atmosphere, the circuit carved into the city — it’s iconic. Formula One reminds me how powerful passion can be, how global community can come together for pure competition, and how thrilling it is to chase something wholeheartedly.
+      </p>
+    </section>
+
+    <div class="hobby-image">
+      <img src="assets/Screenshot 2025-08-16 at 4.58.37 PM.png" alt="Emma's design and artwork" />
+    </div>
+
+    <section>
+      <h2>Designing & Art</h2>
+      <p>
+        Art has always been a creative outlet for me. Whether I’m sketching with pencil, painting with acrylics, or sculpting with clay, I find joy in expressing ideas visually and with my hands. It’s a way for me to slow down, get into flow, and explore shapes, textures, and color without boundaries. Each piece I create is a reflection of curiosity and feeling — sometimes abstract, sometimes intentional, but always personal.
+      </p>
+      <p>
+        That same creativity extends into my technical world through design. I love building things — especially with code. Designing clean, intuitive websites or immersive virtual environments gives me that same sense of artistry, but with structure and function woven in. One of my favorite recent projects was creating a virtual meditative experience for mindful breathing — a calming space where visuals and interactivity come together to support mental wellness. Blending design and tech is one of the most rewarding parts of what I do.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Contact:</p>
+      <ul>
+        <li><a href="mailto:emmavigy@gmail.com">emmavigy@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/emmavigy/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/evigy" target="_blank">GitHub</a></li>
+        <li>Aiken, South Carolina</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>
